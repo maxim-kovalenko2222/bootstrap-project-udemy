@@ -1,16 +1,18 @@
 * {
-  font-family: "Roboto" sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
   position: relative;
-}
-
-nav {
   height: 50px;
-  background: #212121;
 }
-
+nav {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background-color: #212121;
+  z-index: 2;
+}
 .menu {
   display: flex;
   justify-content: space-between;
@@ -20,9 +22,9 @@ nav {
 }
 
 .menu .menu_link {
-  font-weight: 300;
-  font-size: 15px;
   color: #ffffff;
+  font-size: 15px;
+  font-weight: 300;
 }
 
 .menu .menu_item {
@@ -32,6 +34,7 @@ nav {
 
 .subheader {
   position: absolute;
+  top: 50px;
   width: 100%;
   height: 84px;
   background-color: rgba(0, 0, 0, 0.6);
@@ -78,6 +81,7 @@ nav {
   border: none;
   border-radius: 4px;
   background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
   color: #ffffff;
   font-size: 14px;
   font-weight: 400;
@@ -85,11 +89,10 @@ nav {
 }
 
 .promo {
-  min-width: 800px;
-  background: url(../icons/uber_bg.png) center center/cover no-repeat;
+  min-height: 800px;
+  background: url("../img/bg/main_bg.jpg") center center/cover no-repeat;
   padding: 150px 0 135px 0;
 }
-
 .promo .promo_header {
   color: #ffffff;
   font-weight: 700;
@@ -99,7 +102,6 @@ nav {
   margin: 0;
   text-align: center;
 }
-
 .promo .promo_subheader {
   color: #ffffff;
   font-weight: 700;
@@ -113,10 +115,10 @@ nav {
 
 .promo .promo_descr {
   color: #ffffff;
-  font-weight: 400;
-  text-align: center;
   font-size: 18px;
+  font-weight: 400;
   line-height: 24px;
+  text-align: center;
   margin-top: 23px;
 }
 
@@ -129,8 +131,71 @@ nav {
   border: none;
   border-radius: 4px;
   background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
   color: #ffffff;
   font-size: 18px;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+.reasons {
+  padding: 71px 0 65px 0;
+}
+
+.label {
+  margin: 0 auto;
+  height: 24px;
+  width: 112px;
+  padding: 5px 12px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.title {
+  margin-bottom: 0;
+  margin-top: 38px;
+  color: #222222;
+  font-size: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.reasons .reasons_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+}
+
+.reasons .reasons_block .reasons_round {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 26px;
+  width: 113px;
+  height: 113px;
+  background-color: #1eacc7;
+  border-radius: 100%;
+}
+
+.reasons .reasons_block .reasons_descr {
+  width: 343px;
+}
+
+.reasons .reasons_block .reasons_descr .reasons_subtitle {
+  line-height: 21px;
+  color: #1eacc7;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.reasons .reasons_block .reasons_descr .reasons_text {
+  color: #202020;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 21px;
 }
