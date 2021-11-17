@@ -164,6 +164,7 @@ nav {
   font-size: 11px;
   font-weight: 300;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .title {
@@ -173,6 +174,14 @@ nav {
   font-size: 38px;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
+}
+
+.subtitle {
+  margin-top: 19px;
+  color: #222;
+  font-size: 17px;
+  font-weight: 400;
   text-align: center;
 }
 
@@ -222,5 +231,80 @@ nav {
   font-size: 15px;
   font-weight: 300;
   line-height: 21px;
+}
+
+.mobile {
+  min-height: 864px;
+  padding: 48px 0 79px 0;
+  background: url("../img/bg/mobile_app.png") center center/cover no-repeat;
+}
+
+.mobile .row {
+  margin-top: 32px;
+}
+
+.mobile_item {
+  position: relative;
+  width: 320px;
+  height: 280px;
+  margin: 0 auto;
+  margin-bottom: 19px;
+  padding-top: 92px;
+}
+
+.mobile_item_1 {
+  background: url("../img/bg/mobile_screen_1.jpg") center center/cover no-repeat;
+}
+
+.mobile_item_2 {
+  background: url("../img/bg/mobile_screen_2.jpg") center center/cover no-repeat;
+}
+
+.mobile_item_3 {
+  background: url("../img/bg/mobile_screen_3.jpg") center center/cover no-repeat;
+}
+
+.mobile_item_4 {
+  background: url("../img/bg/mobile_screen_4.jpg") center center/cover no-repeat;
+}
+
+.mobile_item_5 {
+  background: url("../img/bg/mobile_screen_5.jpg") center center/cover no-repeat;
+}
+
+.mobile_item_6 {
+  background: url("../img/bg/mobile_screen_6.jpg") center center/cover no-repeat;
+}
+
+.mobile_item_subtitle {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.mobile_item_plus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  width: 26px;
+  height: 26px;
+  background-color: #000000;
+  margin: 0 auto;
+  border-radius: 100%;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
